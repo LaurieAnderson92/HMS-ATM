@@ -6,6 +6,17 @@ This is the Code Institute student template for Codeanywhere. If you are using G
 
 You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
 
+## ERD 
+
+![ERD](assets/documentation/ERD.png)
+
+### Change Log
+
+| Version  | Date    |  Notes                                                |
+| -------- | ------- | ----------------------------------------------------- |
+| 1        |   14/09/2024    | First draft of the ERD |
+
+
 ## Codeanywhere Reminders
 
 To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
