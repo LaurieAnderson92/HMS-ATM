@@ -8,7 +8,7 @@ class Character(models.Model):
     name = models.CharField()
     body = models.TextField()
     player = models.ForeignKey(
-        User, related_name='character')
+        User, on_delete=models.SET_NULL, related_name='character', null=True)
     status = models.IntegerField(choices=CHARACTER_STATUS, default=0)
     is_npc = models.BooleanField(default=False)
     is_hidden = models.BooleanField(default=False)
