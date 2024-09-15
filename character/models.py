@@ -21,3 +21,15 @@ class Character(models.Model):
     def __str__(self):
         return f"{self.name} ({self.player})"
     
+class Account(models.Model):
+    body = models.TextField()
+    value = models.IntegerField(default=0)
+    owner = models.ForeignKey(
+        Character, on_delete=models.SET_NULL, related_name='accounts', null=True)
+    is_guild_account = models.BooleanField(default=False)
+    is_hidden = models.BooleanField(default=False)
+    is_frozen = models.BooleanField(default=False)
+    updated_on = models.DateTimeField(auto_now=True)
+        
+    class Meta:
+        ordering = ["is_guild_account"]
