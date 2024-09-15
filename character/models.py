@@ -33,3 +33,6 @@ class Account(models.Model):
         
     class Meta:
         ordering = ["is_guild_account"]
+        
+    def __str__(self):
+        return f"{self.owner} ({self.body})"

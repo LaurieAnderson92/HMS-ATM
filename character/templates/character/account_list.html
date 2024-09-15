@@ -1,5 +1,25 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>If we see this it works</h1>
-{% endblock %}
+<div class="container-fluid">
+    <div class="row">
+        <!-- Account Template -->
+        
+        <div class="col-12 mt-3 left">
+            <div class="row">
+                {% for account in accounts %}
+                <div class="col-md-3">
+                    
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <p>{{account.body}}</p>
+                            <p>{{account.value}} ss</p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}               
+            </div>
+        </div>
+        
+    </div>
+    {% endblock content %}
