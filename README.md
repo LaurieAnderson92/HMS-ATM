@@ -8,12 +8,13 @@ You can safely delete this README.md file, or change it for your own project. Pl
 
 ## ERD 
 
-![ERD](assets/documentation/ERD.png)
+![ERD](assets/documentation/erd.jpg)
 
 ### Change Log
 
 | Version  | Date    |  Notes                                                |
 | -------- | ------- | ----------------------------------------------------- |
+| 2        |   15/09/2024    | Fixed references to primary key and adjusted relationships for account |
 | 1        |   14/09/2024    | First draft of the ERD |
 
 
